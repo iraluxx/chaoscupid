@@ -105,6 +105,8 @@ body {
     font-size: var(--base-font-size);
     cursor: pointer;
     transition: opacity 0.2s ease;
+    margin-bottom:0.8rem;
+    margin-top:0.8rem;
 }
 
 .generate-button:hover {
