@@ -1,143 +1,86 @@
 const locations = [
-    // Universal locations
-    "local supermarket",
-    "public library",
-    "random parking garage",
-    "neighborhood playground",
-    "busy train station",
-    "24-hour convenience store",
-    "hotel lobby",
-    "public fountain",
-    "city viewpoint",
-    "quiet bookstore",
-    // Singapore touches
-    "void deck",
-    "nearby kopitiam",
-    "shopping mall",
-    "neighborhood park",
-    "food court"
+    "abandoned mall that's definitely not haunted",
+    "karaoke room at 3am in full costume",
+    "fancy hotel lobby pretending you're rich",
+    "IKEA after getting purposefully lost",
+    "McDonald's drive-thru but you're both walking",
+    "local park but it's YOUR park now",
+    "cat cafe but you're allergic",
+    "that one escalator that's always broken",
+    "random wedding you weren't invited to",
+    "public fountain at midnight",
+    "extremely bougie pet shop",
+    "car wash but you don't have a car",
+    "museum security camera blind spots",
+    "that one bench that looks suspicious",
+    "anywhere as long as you're narrating like Morgan Freeman"
 ];
 
 const activities = [
-    // Chaotic but doable activities
-    "start a flash mob wedding proposal",
-    "practice apocalypse survival scenarios",
-    "create conspiracy theory vision boards",
-    "hold a shadow puppet rave",
-    "start an underground potato chip rating club",
-    "practice dramatic soap opera scenes",
-    "invent new yoga poses named after cryptids",
-    "write passive-aggressive haikus to leave on cars",
-    "start a competitive meditation league",
-    "host a silent disco for neighbourhood cats",
-    "develop new conspiracy theories about pigeons",
-    "start an underground cheese rolling league",
-    "practice extreme origami combat",
-    "hold a speed dating event for your houseplants",
-    "create a dramatic lip-sync battle",
-    "start a mini paper airplane competition",
-    "invent new ice cream flavor combinations",
-    "do a terrible accent challenge",
-    "play chess but make up new rules",
-    "write and perform a terrible rap about each other",
-    "make up fake stories about random passersby",
-    "create new pizza toppings using only snack foods",
-    "play 'guess that hummed song'",
-    "have a public compliment battle",
-    "create new coffee orders with ridiculous names",
-    "draw each other blindfolded",
-    "invent new dance moves named after emotions",
-    "play 'spot the spy' with random people",
-    "create a mini obstacle course",
-    "make up new words and use them in conversation",
-    "do a silent movie reenactment",
-    "create superhero origin stories for strangers",
-    "play 'guess what I'm drawing' on napkins",
-    "design a new secret handshake",
-    // Local fusion ideas
-    "create new bubble tea flavors",
-    "invent fusion food combinations",
-    "start a food review channel",
-    "plan a mock food tour",
-    "design a signature drink"
+    "recreate the 'Draw me like your French girls' scene with stick figures",
+    "practice your 'I am inevitable' speech to pigeons",
+    "start a fight club but it's just aggressive compliments",
+    "do a dramatic reading of product ingredients",
+    "launch your villain origin story",
+    "audition for roles that don't exist",
+    "start a cult around bubble tea",
+    "practice your Jurassic Park raptor calls",
+    "make uncomfortably long eye contact with statues",
+    "give TED talks to random objects",
+    "write passive-aggressive letters to buildings",
+    "practice your Matrix slow-mo dodges",
+    "give nature documentary commentary about passersby",
+    "start a very serious investigation about nothing",
+    "rehearse for the heist you'll never actually do"
 ];
 
 const twists = [
-    // Universal twists
-    "while wearing matching tinfoil hats",
-    "but only communicate through interpretive dance",
-    "dressed as historical figures from different eras",
-    "while speaking exclusively in movie quotes",
-    "but everything must be done backwards",
-    "in slow motion",
-    "while pretending to be undercover time travelers",
-    "but treat it like you're in a nature documentary",
-    "using only things found in your junk drawer",
-    "while roleplaying as rival super villains",
-    "but you must yodel all conversations",
-    "while wearing formal attire made of bubble wrap",
-    "but everything must rhyme",
-    "while pretending to be amateur cryptozoologists",
-    "but communicate only through fortune cookie messages",
-    "but you can only whisper",
-    "while pretending to be food critics",
-    "but everything must be done in slow motion",
-    "while using only movie quotes",
-    "but you must narrate everything you do",
-    "while wearing your clothes backwards",
-    "but pretend you're both secret agents",
-    "while speaking in rhymes",
-    "but act like you're in a reality TV show",
-    "while mimicking each other's mannerisms",
-    "but pretend you're meeting for the first time",
-    "while acting like YouTube influencers",
-    "but everything must be done dramatically",
-    "while pretending to be time travelers",
-    "but you can only communicate through drawings",
-    "while acting like rival cooking show hosts",
-    "but everything must be a competition",
-    "while pretending to be wildlife documentary hosts",
-    "but you must include random dance moves",
-    "while speaking in made-up accents",
-    // Local flavor twists
-    "but only using Singlish",
-    "while rating everything out of 10",
-    "but must take food photos of everything",
-    "while debating which hawker center is better",
-    "but everything must be 'gram-worthy'"
+    "but you must quote vines that don't exist",
+    "while aggressively avoiding the floor because it's lava",
+    "but everything must be explained like a WikiHow article",
+    "as if you're in Wes Anderson's deleted scenes",
+    "but treating it like a questionable true crime podcast",
+    "while carrying a mysterious briefcase that's actually empty",
+    "but everything must be done like a TikTok challenge",
+    "as if you're both NPCs with questionable AI",
+    "but narrate everything like it's The Office",
+    "while method acting as badly written characters",
+    "but everything needs emotional BGM played from your phone",
+    "as if Mercury is permanently in retrograde",
+    "but you're both pretending to be each other's evil twin",
+    "while recreating scenes from movies that don't exist",
+    "but everything must be done in interpretive dance"
 ];
 
-const scenarios = [
-    // Specific scenario combinations that work well
-    {
-        location: "local supermarket",
-        activity: "create a mystery basket cooking challenge",
-        twist: "while acting like cooking show hosts"
-    },
-    {
-        location: "public library",
-        activity: "write ridiculous alternative endings to famous books",
-        twist: "but whisper everything dramatically"
-    },
-    {
-        location: "neighborhood park",
-        activity: "create and perform a nature documentary",
-        twist: "while speaking in terrible British accents"
-    }
-    // Add more curated combinations as needed
+const movieQuotes = [
+    "I'll have what she's having",
+    "You're gonna need a bigger boat",
+    "I see dead people... on this date",
+    "My precious... dinner plans",
+    "I am the one who knocks... on random doors",
+    "To infinity and the nearest Starbucks",
+    "You talkin' to me? In this economy?",
+    "Luke, I am your third date",
+    "Here's looking at you, awkward person",
+    "Houston, we have a situation",
+    "I'm having an old friend for dinner... at McDonald's",
+    "I'm the king of the world... of this food court",
+    "Life is like a box of questionable decisions",
+    "They may take our lives, but they'll never take our dinner reservations",
+    "You shall not pass... without trying this weird food combo"
 ];
 
 const loadingMessages = [
-    "Generating chaos...",
-    "Calculating perfect awkwardness levels...",
-    "Maximizing memory potential...",
-    "Ensuring optimal embarrassment...",
-    "Brewing up something special...",
-    "Loading romantic mayhem...",
-    "Perfecting the perfect imperfection...",
-    "Randomizing romance levels...",
-    "Calculating cringe factor...",
-    "Maximizing memorable moments..."
+    "Channeling chaotic energy...",
+    "Rolling for initiative...",
+    "Consulting the prophecy...",
+    "Asking your FBI agent for advice...",
+    "Manifesting main character energy...",
+    "Checking if Mercury is in Gatorade...",
+    "Stealing the Declaration of Independence...",
+    "Calculating chaotic neutral alignment...",
+    "Searching for plot armor...",
+    "Setting up the character arc..."
 ];
 
 function getRandomElement(array) {
@@ -145,17 +88,15 @@ function getRandomElement(array) {
 }
 
 function generateDate() {
-    // 20% chance to use a curated scenario
-    if (Math.random() < 0.2 && scenarios.length > 0) {
-        const scenario = getRandomElement(scenarios);
-        return `Head to the ${scenario.location} to ${scenario.activity} ${scenario.twist}!`;
-    }
-    
     const location = getRandomElement(locations);
     const activity = getRandomElement(activities);
     const twist = getRandomElement(twists);
+    const quote = getRandomElement(movieQuotes);
     
-    return `Head to the ${location} to ${activity} ${twist}!`;
+    // 50% chance to add a movie quote
+    const withQuote = Math.random() < 0.5 ? ` Remember: "${quote}"` : '';
+    
+    return `Mission: Visit the ${location} to ${activity} ${twist}!${withQuote}`;
 }
 
 document.getElementById('generateBtn').addEventListener('click', () => {
