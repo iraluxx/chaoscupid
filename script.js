@@ -13,12 +13,19 @@ const locations = [
     "car wash but you don't have a car",
     "museum security camera blind spots",
     "that one bench that looks suspicious",
-    "anywhere as long as you're narrating like Morgan Freeman"
+    "anywhere as long as you're narrating like Morgan Freeman",    
+    "rooftop overlooking city lights",    
+    "place that's 'definitely not a front'",    
+    "food court but only the weird stalls",    
+    "suspiciously empty LAN gaming center",
+    "antique shop with questionable items"
 ];
 
 const activities = [
     "recreate the 'Draw me like your French girls' scene with stick figures",
+    "share your darkest secrets",
     "practice your 'I am inevitable' speech to pigeons",
+    "trade stories about your secret identities",
     "start a fight club but it's just aggressive compliments",
     "do a dramatic reading of product ingredients",
     "launch your villain origin story",
@@ -31,7 +38,20 @@ const activities = [
     "practice your Matrix slow-mo dodges",
     "give nature documentary commentary about passersby",
     "start a very serious investigation about nothing",
-    "rehearse for the heist you'll never actually do"
+    "rehearse for the heist you'll never actually do",    
+    "practice pickpocketing each other (badly)",    
+    "plan escape routes from every room",    
+    "pretend you're in witness protection",    
+    "make a 5-course meal using vending machines",    
+    "review restaurants based on their napkins",    
+    "debug each other's life choices",    
+    "calculate the probability of everything",
+    "min-max your dating strategy",    
+    "create patch notes for your personality",
+    "optimize your walking route",
+    "speedrun a normal activity",    
+    "collect evidence of time travelers",    
+    "start harmless rumors about statues"
 ];
 
 const twists = [
@@ -49,7 +69,21 @@ const twists = [
     "as if Mercury is permanently in retrograde",
     "but you're both pretending to be each other's evil twin",
     "while recreating scenes from movies that don't exist",
-    "but everything must be done in interpretive dance"
+    "but everything must be done in interpretive dance",    
+    "as if the fate of the world depends on it",    
+    "but one of you might be a double agent",   
+    "while avoiding all surveillance cameras",    
+    "but maintain intense eye contact",    
+    "but don't acknowledge each other in public",    
+    "but in complete silence",    
+    "while filming a documentary that doesn't exist",    
+    "using only cooking show terminology",    
+    "but everything must be 'deconstructed'",    
+    "while calculating success probability",
+    "but everything needs tech support",
+    "as if you're in a badly translated game",
+    "while maintaining optimal efficiency",    
+    "but break an imaginary rule every 5 minutes"
 ];
 
 const movieQuotes = [
