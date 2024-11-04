@@ -70,6 +70,11 @@ const movieQuotes = [
     "You shall not pass... without trying this weird food combo"
 ];
 
+
+document.getElementById('generateBtn').addEventListener('click', () => {
+    const dateResult = document.getElementById('dateResult');
+    dateResult.style.opacity = '0';
+
 const loadingMessages = [
     "Channeling chaotic energy...",
     "Rolling for initiative...",
@@ -82,6 +87,12 @@ const loadingMessages = [
     "Searching for plot armor...",
     "Setting up the character arc..."
 ];
+
+setTimeout(() => {
+    dateResult.textContent = getRandomElement(loadingMessages);
+    dateResult.className = 'result-box result-loading';
+    dateResult.style.opacity = '1';
+}, 300);
 
 function getRandomElement(array) {
     return array[Math.floor(Math.random() * array.length)];
@@ -117,4 +128,14 @@ document.getElementById('generateBtn').addEventListener('click', () => {
             dateResult.style.opacity = '1';
         }, 300);
     }, 1500);
+});
+
+setTimeout(() => {
+    dateResult.style.opacity = '0';
+    setTimeout(() => {
+        dateResult.textContent = generateDate();
+        dateResult.className = 'result-box result-generated';
+        dateResult.style.opacity = '1';
+    }, 300);
+}, 1500);
 });
